@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deedar Ali - Portfolio</title>
+    <style>
+        /* CSS Styling for Portfolio */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background: #f39c12;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #2ecc71;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Deedar Ali</h1>
+        <p>Database Systems Expert | Computer Science Graduate</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is <b>Deedar Ali</b>. I have completed my Bachelor's degree in Computer Science. I have extensive experience in <b>Database Systems</b> and love working with data management and optimization. I am passionate about learning new technologies and improving my skills in database design and development.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul style="list-style: none; padding: 0; font-size: 1.2rem;">
+            <li>✅ Student Management System</li>
+            <li>✅ Inventory Management System using SQL</li>
+            <li>✅ Portfolio Website using HTML, CSS, and JavaScript</li>
+            <li>✅ Database Design for E-commerce Website</li>
+        </ul>
+        <a href="#contact" class="btn">Contact Me for Collaboration</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to work with me or have any queries, feel free to reach out!</p>
+        <p><b>Email:</b> <a href="mailto:deedara296@gmail.com">deedara296@gmail.com</a></p>
+        <p><b>Phone:</b> <a href="tel:+923111358073">0311-1358073</a></p>
+        
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Deedar Ali | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Form Interaction -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
